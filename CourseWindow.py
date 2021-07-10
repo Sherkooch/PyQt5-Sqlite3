@@ -3,7 +3,7 @@ import sqlite3 as sql
 
 class Ui_CourseWindow(object):
     def loadData(self):
-        conn = sql.connect("D:\Me\Comp\PYTHON\Project For Poors\Kosar Yaghoobzadeh\INTERFACE\my_db.db")
+        conn = sql.connect("Database Address in your PC")
         c = conn.cursor()
         result = c.execute("SELECT * FROM tbl_cort")
         self.tableWidget.setRowCount(0)
