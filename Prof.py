@@ -15,7 +15,7 @@ class Ui_ProfWindow(object):
     
     def GET_DATA(self):
         self.window = QtWidgets.QMainWindow()
-        conn = sql.connect("DataBase Adress in your PC")
+        conn = sql.connect("DataBase Address in your PC")
         c = conn.cursor()
         
         self.PRID_input = self.InputNumber.text()
