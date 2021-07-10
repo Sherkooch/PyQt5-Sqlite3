@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QMessageBox
 class Ui_StInfoWindow(object):
     
     def insert_into(self):
-        conn = sql.connect("DataBase Adress in your PC")
+        conn = sql.connect("DataBase Address in your PC")
         c = conn.cursor()
         self.STID = self.StNumEdit.text()
         self.STNAME = self.StNameEdit.text()
