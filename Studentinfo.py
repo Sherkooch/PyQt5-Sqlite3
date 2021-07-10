@@ -14,7 +14,7 @@ class Ui_StInfoWindowNotNew(object):
         self.STATUS = row[5]
 
     def Delete_ST(self):
-        conn = sql.connect("D:\Me\Comp\PYTHON\Project For Poors\Kosar Yaghoobzadeh\INTERFACE\my_db.db")
+        conn = sql.connect("Database Address in your PC")
         c = conn.cursor()
         c.execute("DELETE FROM tbl_stt WHERE STID='{}'".format(self.STID))
         conn.commit()
