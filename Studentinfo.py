@@ -1,7 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sqlite3 as sql
 from PyQt5.QtWidgets import QMessageBox
-from StudentinfoEdit import *
 
 class Ui_StInfoWindowNotNew(object):
     
