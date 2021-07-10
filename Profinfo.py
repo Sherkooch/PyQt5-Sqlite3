@@ -11,7 +11,7 @@ class Ui_PRInfo(object):
         self.STATUS = row[4]
     
     def Delete_ST(self):
-        conn = sql.connect("D:\Me\Comp\PYTHON\Project For Poors\Kosar Yaghoobzadeh\INTERFACE\my_db.db")
+        conn = sql.connect("DataBase Address in your PC")
         c = conn.cursor()
         c.execute("DELETE FROM tbl_prof WHERE PRID='{}'".format(self.PRID))
         conn.commit()
