@@ -14,7 +14,7 @@ class Ui_StudentWindow(object):
     # Connects to DB And Searchs in it
     def GET_DATA(self):
         self.window = QtWidgets.QMainWindow()
-        conn = sql.connect("D:\Me\Comp\PYTHON\Project For Poors\Kosar Yaghoobzadeh\INTERFACE\my_db.db")
+        conn = sql.connect("Database Address in your PC")
         c = conn.cursor()
         
         self.STID_input = self.InputNumber.text()
