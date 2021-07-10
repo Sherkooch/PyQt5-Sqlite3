@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QMessageBox
 
 class Ui_GradeSub(object):
     def doAll(self):
-        conn = sql.connect("DataBase Adress in your PC")
+        conn = sql.connect("DataBase Address in your PC")
         c = conn.cursor()
         self.Row = self.RowNum_input.text()
         self.Grade = self.Grade_input.text()
