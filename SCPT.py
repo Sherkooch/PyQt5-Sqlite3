@@ -4,7 +4,7 @@ import sqlite3 as sql
 
 class Ui_SCPTWindow(object):
     def loadData(self):
-        conn = sql.connect("D:\Me\Comp\PYTHON\Project For Poors\Kosar Yaghoobzadeh\INTERFACE\my_db.db")
+        conn = sql.connect("Database Address in your PC")
         c = conn.cursor()
         result = c.execute("SELECT * FROM tbl_scpt")
         self.tableWidget.setRowCount(0)
