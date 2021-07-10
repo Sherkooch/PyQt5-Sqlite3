@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QMessageBox
 class Ui_ProfInfoWindow(object):
     
     def insert_into(self):
-        conn = sql.connect("D:\Me\Comp\PYTHON\Project For Poors\Kosar Yaghoobzadeh\INTERFACE\my_db.db")
+        conn = sql.connect("DataBase Adress in your PC")
         c = conn.cursor()
         self.PRID = self.PRID_show.text()
         self.PRNAME = self.PRNAME_show.text()
